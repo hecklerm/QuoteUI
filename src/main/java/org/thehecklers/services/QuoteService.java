@@ -2,13 +2,12 @@ package org.thehecklers.services;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import org.thehecklers.org.thehecklers.entities.Quote;
-import org.thehecklers.org.thehecklers.entities.QuoteSource;
+import org.thehecklers.entities.Quote;
+import org.thehecklers.entities.QuoteSource;
 
 /**
  * Created by markheckler on 12/13/15.

@@ -1,4 +1,4 @@
-package org.thehecklers.org.thehecklers.entities;
+package org.thehecklers.entities;
 
 /**
  * Created by markheckler on 12/13/15.
