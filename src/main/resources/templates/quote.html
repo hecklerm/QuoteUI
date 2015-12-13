@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Quote Randomizer</title>
+</head>
+<body>
+    <h1>Quote for You</h1>
+
+    <h3><p th:text="${quote.quoteText}" /></h3>
+    <p th:text="${quote.context}" />
+    <p th:text="${quote.quoteSource.name}" />
+    <p th:text="${quote.quoteSource.description}" />
+</body>
+</html>
