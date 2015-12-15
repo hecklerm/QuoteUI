@@ -2,6 +2,7 @@ package org.thehecklers.services;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -13,9 +14,10 @@ import org.thehecklers.entities.QuoteSource;
  * Created by markheckler on 12/13/15.
  */
 @Service
-@ConfigurationProperties(prefix="quote")
+//@ConfigurationProperties(prefix="quote")
 @Component
 public class QuoteService {
+    @Value("${quote.service}")
     private String service;
 
     @Autowired
