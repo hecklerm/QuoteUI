@@ -12,6 +12,7 @@ import org.thehecklers.services.QuoteService;
 //@RestController
 @Controller
 public class QuoteController {
+
     @Autowired
     QuoteService service;
 
@@ -20,7 +21,4 @@ public class QuoteController {
         model.addAttribute("quote", service.randomQuote());
         return "quote";
     }
-//    public Quote randomQuote() {
-//        return service.randomQuote();
-//    }
 }
